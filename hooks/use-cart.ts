@@ -30,7 +30,6 @@ const useCart = create(
         },
         removeAll: () => {
             set({items: []})
-            toast.success("Items removed.")
         }
     }), {
         name: "cart-storage", storage: createJSONStorage(() => localStorage)
